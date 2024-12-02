@@ -377,26 +377,3 @@ print("Now evaluating the model on the test set:")
 test_loss=model.evaluate(Master_entrydata_Test, Totals_matrix_Test)
 print(f"Test Loss: {test_loss}")
 
-# Evaluating the model on the test set after training
-#print("Now evaluating the model on the test set:")
-#test_loss = model.evaluate(X_test, y_test)
-#print(f"Test Loss: {test_loss}")
-
-#Make predictions with new data
-#new_data= ... # features of piece who's time to predict
-#print("Now predicting Labor Hours:")
-#predictions=model.predict(new_data)
-#print("Thank you for running me")
-
-#Inspect the weights of a specific layer
-#layer_index=0 
-#weights= model.layers[layer_index].get_weights()
-
-#print('Weights:', weights)
-
-#saving model
-#model.save('my_model.h5')
-
-#lodaing model
-#from tensorflow.keras.models import load_model
-#model = load_model('my_model.h5')
