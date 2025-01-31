@@ -301,11 +301,11 @@ Master_entrydata_test= scaler.transform(Master_entrydata_Test)
                                             
 # Define the model
 model = keras.Sequential([
-    layers.Dense(256, activation='relu',kernel_initializer='he_uniform', input_shape=(116,)),  # Input layer with 116 features
+    layers.Dense(256, activation='relu',kernel_initializer='he_uniform', input_shape=(116,)),  # Input layer with 256 features
     Dropout(0.3),  # Drop 30% of the neurons to prevent overfitting
     layers.Dense(128, activation='relu',kernel_initializer='he_uniform'),  # Hidden layer with 128 neurons
     Dropout(0.3),  # Dropout to improve generalization
-    layers.Dense(64, activation='relu',kernel_initializer='he_uniform'),  # Hidden layer with 128 neurons
+    layers.Dense(64, activation='relu',kernel_initializer='he_uniform'),  # Hidden layer with 64 neurons
     Dropout(0.3),
     layers.Dense(32, activation='relu',kernel_initializer='he_uniform'),
     layers.Dense(1, activation='linear')  # Output layer for regression. linear activation will display overtime as well.
